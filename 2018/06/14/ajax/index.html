@@ -86,17 +86,21 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="一.基本内容同步交互和异步交互  同步交互客户端向服务端发送请求,到服务端进行响应,这个过程中,用户不能做任何其他事情(等) 异步交互客户端向服务端发送请求,直到服务端进行响应,这个过程中,用户可以做任何其他事情(不等)  同步与异步的区别  同步交互:1.执行速度慢2.响应的是完整的html页面 异步交互:1.执行的速度相对快2.响应的是部分的数据  ajax定义 Asynchronus Jav">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2018/06/09/hello-world/index.html">
+<meta property="og:title" content="AJAX">
+<meta property="og:url" content="http://yoursite.com/2018/06/14/ajax/index.html">
 <meta property="og:site_name" content="weixin-Chen blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="一.基本内容同步交互和异步交互  同步交互客户端向服务端发送请求,到服务端进行响应,这个过程中,用户不能做任何其他事情(等) 异步交互客户端向服务端发送请求,直到服务端进行响应,这个过程中,用户可以做任何其他事情(不等)  同步与异步的区别  同步交互:1.执行速度慢2.响应的是完整的html页面 异步交互:1.执行的速度相对快2.响应的是部分的数据  ajax定义 Asynchronus Jav">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-09T02:00:45.796Z">
+<meta property="og:image" content="http://yoursite.com/2018/06/14/ajax/ajax.png">
+<meta property="og:image" content="http://yoursite.com/2018/06/14/ajax/xml.png">
+<meta property="og:image" content="http://yoursite.com/2018/06/14/ajax/xml1.png">
+<meta property="og:updated_time" content="2018-06-14T14:45:17.944Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="AJAX">
+<meta name="twitter:description" content="一.基本内容同步交互和异步交互  同步交互客户端向服务端发送请求,到服务端进行响应,这个过程中,用户不能做任何其他事情(等) 异步交互客户端向服务端发送请求,直到服务端进行响应,这个过程中,用户可以做任何其他事情(不等)  同步与异步的区别  同步交互:1.执行速度慢2.响应的是完整的html页面 异步交互:1.执行的速度相对快2.响应的是部分的数据  ajax定义 Asynchronus Jav">
+<meta name="twitter:image" content="http://yoursite.com/2018/06/14/ajax/ajax.png">
 
 
 
@@ -126,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/06/09/hello-world/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/06/14/ajax/"/>
 
 
 
 
 
-  <title>Hello World | weixin-Chen blog</title>
+  <title>AJAX | weixin-Chen blog</title>
   
 
 
@@ -294,7 +298,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/09/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/14/ajax/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="weixin-Chen">
@@ -311,7 +315,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">AJAX</h1>
         
 
         <div class="post-meta">
@@ -323,8 +327,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-09T10:00:45+08:00">
-                2018-06-09
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-14T21:08:12+08:00">
+                2018-06-14
               </time>
             
 
@@ -334,6 +338,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/ajax/" itemprop="url" rel="index">
+                    <span itemprop="name">ajax</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -342,8 +368,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/06/09/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/06/09/hello-world/" itemprop="commentCount"></span>
+                <a href="/2018/06/14/ajax/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/06/14/ajax/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -370,7 +396,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  78
+                  1,323
                 </span>
               
 
@@ -386,7 +412,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  6
                 </span>
               
             </div>
@@ -407,16 +433,82 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+        <h1 id="一-基本内容"><a href="#一-基本内容" class="headerlink" title="一.基本内容"></a>一.基本内容</h1><p><strong>同步交互和异步交互</strong></p>
+<ul>
+<li>同步交互<br>客户端向服务端发送请求,到服务端进行响应,这个过程中,用户不能做任何其他事情(等)</li>
+<li>异步交互<br>客户端向服务端发送请求,直到服务端进行响应,这个过程中,用户可以做任何其他事情(不等)</li>
+</ul>
+<p><strong>同步与异步的区别</strong></p>
+<ul>
+<li>同步交互:<br>1.执行速度慢<br>2.响应的是完整的html页面</li>
+<li>异步交互:<br>1.执行的速度相对快<br>2.响应的是部分的数据</li>
+</ul>
+<h2 id="ajax定义"><a href="#ajax定义" class="headerlink" title="ajax定义"></a>ajax定义</h2><blockquote>
+<p>Asynchronus JavaScript and Xml   </p>
+</blockquote>
+<p><strong>异步的javascript和XML</strong></p>
+<p>(不严格的定义)客户端与服务端进行交互,而无需刷新当前页面的技术,称为AJAX<br>Ajax实现的是B/S架构加载<br>实现异步交互的技术</p>
+<p><img src="/2018/06/14/ajax/ajax.png" alt="ajax"></p>
+<h2 id="XMLHttpRequest对象-在服务器中运行"><a href="#XMLHttpRequest对象-在服务器中运行" class="headerlink" title="XMLHttpRequest对象(在服务器中运行)"></a>XMLHttpRequest对象(在服务器中运行)</h2><p>本例在WampServer服务中使用</p>
+<p><strong>实现ajax的六部请求(一般为四步)</strong><br>1.创建XMLHttpRequest对象<br>2.建立连接<br>3.发送请求<br>4.注册监听 -onreadystatechange事件<br>5.获取服务器的通信状态 -readyState<br>6.获取服务器的状态码</p>
+<p><strong>接收服务器的端的响应数据</strong></p>
+<ul>
+<li>使用XMLHttpRequest核心对象的responseText属性</li>
+<li>该属性只能接收文本(HTML)格式</li>
+</ul>
+<p><strong>问题</strong></p>
+<ul>
+<li>解析过程中比较复杂(拆串)</li>
+<li>拆串或拼串极容易出错</li>
+</ul>
+<h3 id="get请求"><a href="#get请求" class="headerlink" title="get请求"></a>get请求</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getXhr</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(<span class="built_in">window</span>.XMLHttpRequest)&#123;</span><br><span class="line">        <span class="keyword">var</span> xhr =<span class="keyword">new</span> XMLHttpRequest()</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="keyword">var</span> xhr =<span class="keyword">new</span> ActiveXObject(<span class="string">'Microsoft.XMLHttp'</span>) <span class="comment">//IE6 下兼容</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> xhr</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> xhr = getXhr() <span class="comment">//1.创建核心对象</span></span><br><span class="line"></span><br><span class="line">xhr.open(<span class="string">'get'</span>,<span class="string">'01.php?key=value'</span>) <span class="comment">//2.与服务器建立连接</span></span><br><span class="line"><span class="comment">//xhr.open('get','01.php') //参数(method,url,async) 默认true异步</span></span><br><span class="line"></span><br><span class="line">xhr.send(<span class="literal">null</span>) <span class="comment">//3.客户端向服务端发送请求</span></span><br><span class="line"><span class="comment">//如果请求类型为get方式的话,send()方法不能发送数据</span></span><br><span class="line"><span class="comment">//应写成xhr.open('get','01.php?key=value') url带参数</span></span><br><span class="line"><span class="comment">//xhr.send('key=value') 错误</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//4.客户端接收服务端请求 2</span></span><br><span class="line"><span class="comment">// 监听服务器的通行状态</span></span><br><span class="line"><span class="comment">//0 尚未初始化</span></span><br><span class="line"><span class="comment">//1 正在接收</span></span><br><span class="line"><span class="comment">//2.接收完成</span></span><br><span class="line"><span class="comment">//3.正在响应</span></span><br><span class="line"><span class="comment">//4.响应完成</span></span><br><span class="line"><span class="comment">//服务器的状态吗 200 ok xhr.status</span></span><br><span class="line">xhr.onreadystatechange=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="comment">//console.log(xhr.readyState) //通行码 2,3,4</span></span><br><span class="line">    <span class="keyword">if</span>(xhr.readyState ==<span class="number">4</span>)&#123; <span class="comment">//响应数据发送完毕</span></span><br><span class="line">        <span class="keyword">if</span>(xhr.status==<span class="number">200</span>)&#123; <span class="comment">//请求必须成功</span></span><br><span class="line">            <span class="comment">//接收服务器的数据</span></span><br><span class="line">            <span class="built_in">console</span>.log(xhr.responseText) <span class="comment">//value成功</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>后台服务端:01.php</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">    <span class="comment">//用户处理客户端的Ajax异步请求</span></span><br><span class="line">    <span class="comment">//1.接收客户端发送的请求数据</span></span><br><span class="line">    $key=$_GET[<span class="string">'key'</span>];</span><br><span class="line">    <span class="keyword">echo</span> $key.<span class="string">'成功'</span>; <span class="comment">//2.向客户端进行响应 输出:value成功</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="post请求"><a href="#post请求" class="headerlink" title="post请求"></a>post请求</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//如果设置post请求</span></span><br><span class="line">    <span class="comment">//必须在send()方法前使用setRequestHeader(key,value)</span></span><br><span class="line">    xhr.setRequestHeader(<span class="string">'Content-Type'</span>,<span class="string">'application/x-www-form-urlencoded'</span>)</span><br><span class="line">    </span><br><span class="line">    xhr.send(<span class="string">'name=小明'</span>)  <span class="comment">//请求参数</span></span><br></pre></td></tr></table></figure>
+<p>02.php<br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">    $name =$_POST[<span class="string">'name'</span>];</span><br><span class="line">    <span class="comment">//var_dump($name);//带格式打印输出</span></span><br><span class="line">    print_r($name);<span class="comment">//打印输出:小明</span></span><br><span class="line">    <span class="keyword">echo</span> $name; <span class="comment">// 响应输出:小明</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="XML格式"><a href="#XML格式" class="headerlink" title="XML格式"></a>XML格式</h2><p><strong>基本格式</strong></p>
+<blockquote>
+<p>HTML,XHTML,DHTML和XML的区别</p>
+</blockquote>
+<ul>
+<li>HTML就是网页====元素定义大小写</li>
+<li>XHTML就是严格意义的HTML=======元素定义大小写<br>(v1.0-2.0 更新5-6年 停掉)</li>
+<li>DHTML======BOM|DOM</li>
+<li>XML=======配置文件|数据格式</li>
+<li>XML文件的定义方式与html非常相似</li>
+<li>html的元素预定好的</li>
+<li>xml允许自定义元素</li>
+</ul>
+<p><strong>xml语法</strong></p>
+<blockquote>
+<p>声明<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="php"><span class="meta">&lt;?</span>xml version=<span class="string">'1.0'</span> encoding=<span class="string">'utf-8'</span><span class="meta">?&gt;</span></span></span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<ul>
+<li>version -设置当前xml文件的版本</li>
+<li>encoding 设置编码格式</li>
+</ul>
+<p>1.0版本–目前唯一版本<br>1.1版本–几乎没人使用<br>版本不会更新</p>
+<p><strong>定义元素</strong></p>
+<ul>
+<li>根元素<users></users></li>
+<li>必须是起始标签</li>
+<li>只能定义一个</li>
+<li>定义元素</li>
+<li>元素名可以定义<br><em>分类</em></li>
+<li>起始标签或单标签</li>
+<li>定义属性</li>
+<li>定义注释</li>
+</ul>
+<blockquote>
+<p>test.xml</p>
+</blockquote>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="php"><span class="meta">&lt;?</span>xml version=<span class="string">'1.0'</span> encoding=<span class="string">'utf-8'</span><span class="meta">?&gt;</span></span></span><br><span class="line"><span class="tag">&lt;<span class="name">users</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">user</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>张三<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">user</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">users</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>在浏览器中显示<br><img src="/2018/06/14/ajax/xml.png" alt="xml"></p>
+<p><strong>目前不能使用</strong><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//定义函数-用于封装XML解析器的创建</span></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">* w3school 帮助文档已过时 return xmldoc.load(xml)</span></span><br><span class="line"><span class="comment">*</span></span><br><span class="line"><span class="comment">* */</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">parseXML</span>(<span class="params">xml</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> xmldoc=<span class="literal">null</span>;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        xmldoc=<span class="keyword">new</span> ActiveXObject(<span class="string">'Microsoft.XMLDOM'</span>);</span><br><span class="line">    &#125;<span class="keyword">catch</span>(e)&#123;</span><br><span class="line">        xmldoc=<span class="built_in">document</span>.implementation.createDocument(<span class="string">""</span>,<span class="string">""</span>,<span class="literal">null</span>)</span><br><span class="line">    &#125;</span><br><span class="line">    xmldoc.async=<span class="literal">false</span>;</span><br><span class="line">    <span class="comment">//load()方法 返回解析后的DOM对象</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> xmlDoc=parseXML(<span class="string">'test.xml'</span>)</span><br><span class="line"><span class="built_in">console</span>.log(xmlDoc)</span><br></pre></td></tr></table></figure></p>
+<p><strong>目前可以使用</strong><br>解析本地XML<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*目前</span></span><br><span class="line"><span class="comment">  * IE new ActiveXObject('Microsoft.XMLDOM')</span></span><br><span class="line"><span class="comment">  * 其他浏览器 var parser=new DOMParser();</span></span><br><span class="line"><span class="comment">  * 使用DOM解析器解析XML文件</span></span><br><span class="line"><span class="comment">  * var xmloc=parser.parserFromString(xmlFile,'application/xml')</span></span><br><span class="line"><span class="comment">  *</span></span><br><span class="line"><span class="comment">  * 当前报错</span></span><br><span class="line"><span class="comment">  * 目前主流的浏览器不能读取本地文件</span></span><br><span class="line"><span class="comment">  * */</span></span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">parseXML</span>(<span class="params">xmlFile</span>)</span>&#123;</span><br><span class="line">      <span class="comment">//创建解析XML后的DOM对象</span></span><br><span class="line">      <span class="keyword">var</span> xmlDoc=<span class="literal">null</span>;</span><br><span class="line">      <span class="comment">//根据不同的浏览器进行解析</span></span><br><span class="line">      <span class="keyword">if</span>(<span class="built_in">window</span>.DOMParser)&#123;</span><br><span class="line">          <span class="comment">//其他浏览器</span></span><br><span class="line">          <span class="keyword">var</span> parser =<span class="keyword">new</span> DOMParser();</span><br><span class="line">          xmlDoc=parser.parseFromString(xmlFile,<span class="string">'application/xml'</span>);</span><br><span class="line">      &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">          <span class="comment">//IE浏览器</span></span><br><span class="line">          <span class="keyword">var</span> parser=<span class="keyword">new</span> ActiveXObject(<span class="string">'Microsoft.XMLDOM'</span>);</span><br><span class="line">          parser.async=<span class="literal">false</span>;</span><br><span class="line">          xmlDoc=parser.loadXML(xmlFile)</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">return</span> xmlDoc;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">var</span> xmlDoc=parseXML(<span class="string">'test.xml'</span>);</span><br><span class="line">  <span class="built_in">console</span>.log(xmlDoc)</span><br></pre></td></tr></table></figure></p>
+<p>输出结果:<br><img src="/2018/06/14/ajax/xml1.png" alt="xmlDOM"></p>
+<p><strong>解析xml</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">    <span class="comment">//DOM解析XML和解析HTML没有任何区别</span></span><br><span class="line"><span class="comment">/*很少使用ById和ByName两个方法</span></span><br><span class="line"><span class="comment">* </span></span><br><span class="line"><span class="comment">* */</span></span><br><span class="line">    <span class="keyword">var</span> xmlDoc=parseXML(<span class="string">'&lt;user&gt;&lt;name&gt;小明&lt;/name&gt;&lt;/user&gt;'</span>)</span><br><span class="line">    <span class="built_in">console</span>.log(xmlDoc)<span class="comment">// &lt;user&gt;&lt;name&gt;小明&lt;/name&gt;&lt;/user&gt;</span></span><br><span class="line">    <span class="keyword">var</span> userEle=xmlDoc.getElementsByTagName(<span class="string">'user'</span>)[<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">var</span> nameEle=userEle.getElementsByTagName(<span class="string">'name'</span>)[<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">var</span> nameTxt=nameEle.childNodes[<span class="number">0</span>].nodeValue</span><br><span class="line">    <span class="built_in">console</span>.log(nameTxt); <span class="comment">//小明</span></span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -469,15 +561,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/06/14/布局/" rel="next" title="布局">
+                <i class="fa fa-chevron-left"></i> 布局
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/06/09/CSS-HTML/" rel="prev" title="CSS-HTML知识点">
-                CSS-HTML知识点 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -646,7 +738,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一-基本内容"><span class="nav-number">1.</span> <span class="nav-text">一.基本内容</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#ajax定义"><span class="nav-number">1.1.</span> <span class="nav-text">ajax定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#XMLHttpRequest对象-在服务器中运行"><span class="nav-number">1.2.</span> <span class="nav-text">XMLHttpRequest对象(在服务器中运行)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#get请求"><span class="nav-number">1.2.1.</span> <span class="nav-text">get请求</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#post请求"><span class="nav-number">1.2.2.</span> <span class="nav-text">post请求</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#XML格式"><span class="nav-number">1.3.</span> <span class="nav-text">XML格式</span></a></li></ol></li></ol></div>
             
 
           </div>
