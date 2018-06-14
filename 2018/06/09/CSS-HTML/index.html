@@ -94,10 +94,16 @@
 <meta property="og:site_name" content="weixin-Chen blog">
 <meta property="og:description" content="CSS 和 HTML 是网页开发中布局相关的组成部分，涉及的内容比较多和杂乱，本小节重点介绍下常考的知识点。 知识点梳理 一：选择器的权重和优先级CSS 选择器有很多，不同的选择器的权重和优先级不一样，对于一个元素，如果存在多个选择器，那么就需要根据权重来计算其优先级。 权重分为四级，分别是：  代表内联样式，如 style=&amp;quot;xxx&amp;quot;，权重为 1000 代表 ID 选择器，如">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/2018/06/09/CSS-HTML/">
+<meta property="og:image" content="http://yoursite.com/2018/06/09/CSS-HTML/">
+<meta property="og:image" content="http://yoursite.com/2018/06/09/CSS-HTML/">
+<meta property="og:image" content="http://yoursite.com/2018/06/09/CSS-HTML/">
+<meta property="og:image" content="http://yoursite.com/2018/06/09/CSS-HTML/">
 <meta property="og:updated_time" content="2018-06-09T06:42:15.699Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS-HTML知识点">
 <meta name="twitter:description" content="CSS 和 HTML 是网页开发中布局相关的组成部分，涉及的内容比较多和杂乱，本小节重点介绍下常考的知识点。 知识点梳理 一：选择器的权重和优先级CSS 选择器有很多，不同的选择器的权重和优先级不一样，对于一个元素，如果存在多个选择器，那么就需要根据权重来计算其优先级。 权重分为四级，分别是：  代表内联样式，如 style=&amp;quot;xxx&amp;quot;，权重为 1000 代表 ID 选择器，如">
+<meta name="twitter:image" content="http://yoursite.com/2018/06/09/CSS-HTML/">
 
 
 
@@ -465,7 +471,7 @@
 <h4 id="题目：为何-float-会导致父元素塌陷？"><a href="#题目：为何-float-会导致父元素塌陷？" class="headerlink" title="题目：为何 float 会导致父元素塌陷？"></a><strong>题目：为何 float 会导致父元素塌陷？</strong></h4></blockquote>
 <h4 id="破坏性"><a href="#破坏性" class="headerlink" title="破坏性"></a>破坏性</h4><p>float 的 <strong>破坏性</strong>——float 破坏了父标签的原本结构，使得父标签出现了坍塌现象。导致这一现象的最根本原因在于： <strong>被设置了 float 的元素会脱离文档流</strong>。其根本原因在于 float 的设计初衷是解决文字环绕图片的问题。大家要记住 float 的这个影响。</p>
 <h4 id="包裹性"><a href="#包裹性" class="headerlink" title="包裹性"></a>包裹性</h4><p><strong>包裹性</strong>也是 float 的一个非常重要的特性，大家用 float 时一定要熟知这一特性。咱们还是先从一个小例子看起：</p>
-<p><img src="" alt="https://user-gold-cdn.xitu.io/2018/2/28/161db8f617bc8f2e?imageView2/0/w/1280/h/960/format/webp/ignore-error/1"></p>
+<p><img src="/2018/06/09/CSS-HTML/" alt="https://user-gold-cdn.xitu.io/2018/2/28/161db8f617bc8f2e?imageView2/0/w/1280/h/960/format/webp/ignore-error/1"></p>
 <p>如上图，普通的 div 如果没有设置宽度，它会撑满整个屏幕，在之前的盒子模型那一节也讲到过。而如果给 div 增加 <code>float:left</code> 之后，它突然变得紧凑了，宽度发生了变化，把内容中的三个字包裹了——这就是包裹性。为 div 设置了 float 之后，其宽度会自动调整为包裹住内容宽度，而不是撑满整个父容器。</p>
 <p>注意，此时 div 虽然体现了包裹性，但是它的 display 样式是没有变化的，还是<code>display:block</code>。</p>
 <p>float 为什么要具有包裹性？其实答案还是得从 float 的设计初衷来寻找，float 是被设计用于实现文字环绕效果的。文字环绕图片比较好理解，但是如果想要让文字环绕一个 div 呢？此时 div 不被 “包裹” 起来的话，就无法实现环绕效果了。</p>
@@ -515,7 +521,7 @@
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="css">    <span class="selector-class">.container</span> &#123;</span></span><br><span class="line"><span class="undefined">        display: flex;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="css">    <span class="selector-class">.item</span> &#123;</span></span><br><span class="line"><span class="css">        <span class="selector-tag">border</span>: 1<span class="selector-tag">px</span> <span class="selector-tag">solid</span> <span class="selector-id">#000</span>;</span></span><br><span class="line"><span class="undefined">        flex: 1;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"item"</span>&gt;</span>aaa<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"item"</span> <span class="attr">style</span>=<span class="string">"flex: 2"</span>&gt;</span>bbb<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"item"</span>&gt;</span>ccc<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"item"</span>&gt;</span>ddd<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>注意，第三个<code>&lt;div&gt;</code>的<code>flex:2</code>，其他的<code>&lt;div&gt;</code>的<code>flex:1</code>，这样第二个<code>&lt;div&gt;</code>的宽度就是其他的<code>&lt;div&gt;</code>的两倍。</p>
 <h4 id="设计原理"><a href="#设计原理" class="headerlink" title="设计原理"></a>设计原理</h4><p>设置了<code>display:flex</code>的元素，我们称为 “容器”（flex container），其所有的子节点我们称为 “成员”（flex item）。容器默认存在两根轴：水平的主轴（main axis）和垂直的交叉轴（cross axis）。主轴的开始位置（与边框的交叉点）叫做 main start，结束位置叫做 main end；交叉轴的开始位置叫做 cross start，结束位置叫做 cross end。项目默认沿主轴排列。单个项目占据的主轴空间叫做 main size，占据的交叉轴空间叫做 cross size。</p>
-<p><img src="" alt="https://user-gold-cdn.xitu.io/2018/2/23/161c1066ba95ed28?imageView2/0/w/1280/h/960/format/webp/ignore-error/1"></p>
+<p><img src="/2018/06/09/CSS-HTML/" alt="https://user-gold-cdn.xitu.io/2018/2/23/161c1066ba95ed28?imageView2/0/w/1280/h/960/format/webp/ignore-error/1"></p>
 <p>将以上文字和图片结合起来，再详细看一遍，这样就能理解 flex 的设计原理，才能更好地实际使用。</p>
 <h4 id="设置主轴的方向"><a href="#设置主轴的方向" class="headerlink" title="设置主轴的方向"></a>设置主轴的方向</h4><p><code>flex-direction</code>可决定主轴的方向，有四个可选项：</p>
 <ul>
@@ -526,7 +532,7 @@
 </ul>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">    <span class="attribute">flex-direction</span>: column-reverse | column | row | row-reverse;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>以上代码设置的主轴方向，将以此对应下图：</p>
-<p><img src="" alt="https://user-gold-cdn.xitu.io/2018/2/23/161c1066cc8d122c?imageView2/0/w/1280/h/960/format/webp/ignore-error/1"></p>
+<p><img src="/2018/06/09/CSS-HTML/" alt="https://user-gold-cdn.xitu.io/2018/2/23/161c1066cc8d122c?imageView2/0/w/1280/h/960/format/webp/ignore-error/1"></p>
 <h4 id="设置主轴的对齐方式"><a href="#设置主轴的对齐方式" class="headerlink" title="设置主轴的对齐方式"></a>设置主轴的对齐方式</h4><p><code>justify-content</code>属性定义了项目在主轴上的对齐方式，值如下：</p>
 <ul>
 <li>flex-start（默认值）：向主轴开始方向对齐</li>
@@ -536,7 +542,7 @@
 <li>space-around：每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.box &#123;</span><br><span class="line">    justify-content: flex-start | flex-end | center |space-between | space-around;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><img src="" alt="https://user-gold-cdn.xitu.io/2018/2/23/161c1066ccd09d05?imageView2/0/w/1280/h/960/format/webp/ignore-error/1"></p>
+<p><img src="/2018/06/09/CSS-HTML/" alt="https://user-gold-cdn.xitu.io/2018/2/23/161c1066ccd09d05?imageView2/0/w/1280/h/960/format/webp/ignore-error/1"></p>
 <h4 id="交叉轴的对齐方式"><a href="#交叉轴的对齐方式" class="headerlink" title="交叉轴的对齐方式"></a>交叉轴的对齐方式</h4><p><code>align-item</code>属性定义项目在交叉轴上如何对齐，值如下：</p>
 <ul>
 <li>flex-start：交叉轴的起点对齐</li>
@@ -546,7 +552,7 @@
 <li>stretch（默认值）：如果项目未设置高度或设为 auto，将占满整个容器的高度。</li>
 </ul>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">    <span class="attribute">align-item</span>: flex-start | flex-end | center | baseline | stretch;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><img src="" alt="https://user-gold-cdn.xitu.io/2018/2/23/161c1066d1feaa64?imageView2/0/w/1280/h/960/format/webp/ignore-error/1"></p>
+<p><img src="/2018/06/09/CSS-HTML/" alt="https://user-gold-cdn.xitu.io/2018/2/23/161c1066d1feaa64?imageView2/0/w/1280/h/960/format/webp/ignore-error/1"></p>
 <hr>
 <h3 id="六：如何实现居中对齐？"><a href="#六：如何实现居中对齐？" class="headerlink" title="六：如何实现居中对齐？"></a>六：如何实现居中对齐？</h3><blockquote>
 <h4 id="题目：如何实现水平居中"><a href="#题目：如何实现水平居中" class="headerlink" title="题目：如何实现水平居中"></a><strong>题目：如何实现水平居中</strong></h4></blockquote>
@@ -690,6 +696,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2018/06/10/necessary/" rel="prev" title="前端技术 博客文章、书籍 积累">
+                前端技术 博客文章、书籍 积累 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -798,7 +808,7 @@ var jiathis_config={
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -809,7 +819,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -820,7 +830,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
