@@ -102,7 +102,7 @@
 <meta property="og:image" content="http://yoursite.com/2018/06/14/ajax/ip2.jpg">
 <meta property="og:image" content="http://yoursite.com/2018/06/14/ajax/sameO.jpg">
 <meta property="og:image" content="http://yoursite.com/2018/06/14/ajax/jsonp.jpg">
-<meta property="og:updated_time" content="2018-06-15T04:24:13.433Z">
+<meta property="og:updated_time" content="2018-07-17T08:23:23.774Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="AJAX">
 <meta name="twitter:description" content="一.基本内容同步交互和异步交互  同步交互客户端向服务端发送请求,到服务端进行响应,这个过程中,用户不能做任何其他事情(等) 异步交互客户端向服务端发送请求,直到服务端进行响应,这个过程中,用户可以做任何其他事情(不等)  同步与异步的区别  同步交互:1.执行速度慢2.响应的是完整的html页面 异步交互:1.执行的速度相对快2.响应的是部分的数据  ajax定义 Asynchronus Jav">
@@ -402,7 +402,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  2,939
+                  3,301
                 </span>
               
 
@@ -418,7 +418,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  14
+                  15
                 </span>
               
             </div>
@@ -581,6 +581,14 @@
 <p>完全跨域 IP不同<br>跨子域 IP相同 但端口号不同</p>
 <h2 id="同源策略"><a href="#同源策略" class="headerlink" title="同源策略"></a>同源策略</h2><p>默认是不允许行跨域请求的</p>
 <p><img src="/2018/06/14/ajax/sameO.jpg" alt="sameO"></p>
+<h2 id="跨域的解决方法"><a href="#跨域的解决方法" class="headerlink" title="跨域的解决方法"></a>跨域的解决方法</h2><ol>
+<li>通过jsonp 跨域<br>2.document.domain+iframe跨域</li>
+<li>location.hash+iframe跨域<br>4.window.name+iframe跨域<br>5.postMessage 跨域<br>6.跨域资源共享(CORS)<br>7.nginx代理跨域<br>8.nodejs中间件代理跨域<br>9.WebSCocket协议跨域</li>
+</ol>
+<h2 id="nginx"><a href="#nginx" class="headerlink" title="nginx"></a>nginx</h2><p>nginx<br><strong>正向代理</strong><br>代理位于网站和客户端中间,客户端无法访问某网站,就将请求发送给带服务器,代理从网站取回来再发送给客户端,网站并不知道为谁服务</p>
+<p><strong>反向代理</strong><br>客户端访问某个网站的一个页面,但是网站并没有,就偷偷从另外一台服务器上取回来,然后作为自己的内容吐给用户,用户不知道真正提供服务的是谁</p>
+<p>对于服务器来说,访问的就是同源服务器上的一个url.而nginx通过检测url前缀,把http请求转发到后面真实的物理服务器.并通过rewrite命令把前缀再去掉.这样真实的服务器就可以正确处理请求,并且并不知道这个请求是来自代理服务器的.</p>
+<p>简单说,ngnix服务器欺骗了浏览器,让它认为这是同源调用,从而解决了浏览器的跨域问题.又通过重写url,欺骗了真实的服务器,让它以为这个http请求是直接来自于用户浏览器的</p>
 <h2 id="jsonp"><a href="#jsonp" class="headerlink" title="jsonp"></a>jsonp</h2><p>实现跨域<br>使用jsonp形式的回调函数来加载其他网域的json数据</p>
 <p><img src="/2018/06/14/ajax/jsonp.jpg" alt="jsonp"></p>
 <p>实现方法<br>HTML中的<code>&lt;script&gt;</code>元素具有开放的策略</p>
@@ -821,7 +829,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一-基本内容"><span class="nav-number">1.</span> <span class="nav-text">一.基本内容</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#ajax定义"><span class="nav-number">1.1.</span> <span class="nav-text">ajax定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#XMLHttpRequest对象-在服务器中运行"><span class="nav-number">1.2.</span> <span class="nav-text">XMLHttpRequest对象(在服务器中运行)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置本地服务器"><span class="nav-number">1.3.</span> <span class="nav-text">设置本地服务器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#get请求"><span class="nav-number">1.4.</span> <span class="nav-text">get请求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#post请求"><span class="nav-number">1.5.</span> <span class="nav-text">post请求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#XML格式"><span class="nav-number">1.6.</span> <span class="nav-text">XML格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#封装ajax"><span class="nav-number">1.7.</span> <span class="nav-text">封装ajax</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二-jQuery中Ajax"><span class="nav-number">2.</span> <span class="nav-text">二.jQuery中Ajax</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#load"><span class="nav-number">2.1.</span> <span class="nav-text">load()</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#get方式"><span class="nav-number">2.1.1.</span> <span class="nav-text">get方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#post方式"><span class="nav-number">2.1.2.</span> <span class="nav-text">post方式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#get"><span class="nav-number">2.2.</span> <span class="nav-text">$.get()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ajax"><span class="nav-number">2.3.</span> <span class="nav-text">$.ajax()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#动态加载js"><span class="nav-number">2.4.</span> <span class="nav-text">动态加载js</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#表单"><span class="nav-number">2.5.</span> <span class="nav-text">表单</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#jquery-form插件"><span class="nav-number">2.6.</span> <span class="nav-text">jquery.form插件</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#跨域请求"><span class="nav-number">3.</span> <span class="nav-text">跨域请求</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#同源策略"><span class="nav-number">3.1.</span> <span class="nav-text">同源策略</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#jsonp"><span class="nav-number">3.2.</span> <span class="nav-text">jsonp</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#getJSON"><span class="nav-number">3.3.</span> <span class="nav-text">$.getJSON()</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一-基本内容"><span class="nav-number">1.</span> <span class="nav-text">一.基本内容</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#ajax定义"><span class="nav-number">1.1.</span> <span class="nav-text">ajax定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#XMLHttpRequest对象-在服务器中运行"><span class="nav-number">1.2.</span> <span class="nav-text">XMLHttpRequest对象(在服务器中运行)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置本地服务器"><span class="nav-number">1.3.</span> <span class="nav-text">设置本地服务器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#get请求"><span class="nav-number">1.4.</span> <span class="nav-text">get请求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#post请求"><span class="nav-number">1.5.</span> <span class="nav-text">post请求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#XML格式"><span class="nav-number">1.6.</span> <span class="nav-text">XML格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#封装ajax"><span class="nav-number">1.7.</span> <span class="nav-text">封装ajax</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二-jQuery中Ajax"><span class="nav-number">2.</span> <span class="nav-text">二.jQuery中Ajax</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#load"><span class="nav-number">2.1.</span> <span class="nav-text">load()</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#get方式"><span class="nav-number">2.1.1.</span> <span class="nav-text">get方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#post方式"><span class="nav-number">2.1.2.</span> <span class="nav-text">post方式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#get"><span class="nav-number">2.2.</span> <span class="nav-text">$.get()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ajax"><span class="nav-number">2.3.</span> <span class="nav-text">$.ajax()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#动态加载js"><span class="nav-number">2.4.</span> <span class="nav-text">动态加载js</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#表单"><span class="nav-number">2.5.</span> <span class="nav-text">表单</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#jquery-form插件"><span class="nav-number">2.6.</span> <span class="nav-text">jquery.form插件</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#跨域请求"><span class="nav-number">3.</span> <span class="nav-text">跨域请求</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#同源策略"><span class="nav-number">3.1.</span> <span class="nav-text">同源策略</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#跨域的解决方法"><span class="nav-number">3.2.</span> <span class="nav-text">跨域的解决方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#nginx"><span class="nav-number">3.3.</span> <span class="nav-text">nginx</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#jsonp"><span class="nav-number">3.4.</span> <span class="nav-text">jsonp</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#getJSON"><span class="nav-number">3.5.</span> <span class="nav-text">$.getJSON()</span></a></li></ol></li></ol></div>
             
 
           </div>
